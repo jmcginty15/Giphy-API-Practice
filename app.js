@@ -15,3 +15,7 @@ $('#search-form').on('submit', async function(evt){
     const url = gifList[index].images.original.url;
     $('#gifs').append(`<img src="${url}">`);
 })
+
+$('#remove-gifs').on('click', function() {
+    $('#gifs').empty();
+})
